@@ -1,0 +1,201 @@
+
+.color-1 {
+    color: #ffffff;
+}
+
+.color-bg-1 {
+    background-color: #ffffff;
+}
+
+.color-2 {
+    color: #cec1b9;
+}
+
+.color-bg-2 {
+    background-color: #cec1b9;
+}
+
+.color-3 {
+    color: #825430;
+}
+
+.color-bg-3 {
+    background-color: #825430;
+}
+
+.color-4 {
+    color: #1a181b;
+}
+
+.color-bg-4 {
+    background-color: #1a181b;
+}
+.color-5{
+    color: #e9e3df;
+}
+.color-bg-5{
+    background-color: #e9e3df;
+}
+.navbar #nav-active{
+    padding-left: 7px;
+    
+}
+.navbar #nav-active:hover{
+    border-radius: 5px;
+    color: #cec1b9;
+    background-color: #825430;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/proyecto-zapateria/assets/img/img-main.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 50vh;
+  padding: 15% 10% 20% 10%;
+  margin: 0 auto;
+  color: #ffffff;
+}
+.container h1 {
+  font-size: 3rem;
+}
+.container p {
+  font-size: 1.3rem;
+}
+
+.container-fluid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
+    gap: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+ul{
+    list-style-type: "- ";
+}
+.img{
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product-desc{
+    padding-left: 8px;
+}
+footer > .row{
+    height: auto;
+}
+.kanit-thin {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .kanit-extralight {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .kanit-medium {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .kanit-semibold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .kanit-bold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .kanit-extrabold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .kanit-black {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .kanit-thin-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .kanit-extralight-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .kanit-light-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .kanit-regular-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .kanit-medium-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .kanit-semibold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .kanit-bold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .kanit-extrabold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .kanit-black-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
