@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Editar Datos de Usuario</h1>
+    <br>
+    <button type="button">
+        <a href="{% url 'usuariosAdd' %}"></a>
+    </button>
+    <div id="idMensajes">
+        {% if mensaje %}
+            {{mensaje}}
+        {% endif %}
+    </div>
+    <table>
+        {% if usuarios %}
+            <th>Rut</th>
+            <th>Nombre</th>
+            <th>Apellido P.</th>
+            <th>Eliminar</th>
+            <th>Modificar</th>
+            {% for x in usuarios %}
+                <tr>
+                    <td>{{ x.rut }}</td>
+                    <td>{{ x.nombre }}</td>
+                    <td>{{ x.apellido_paterno}}</td>
+                    <td><a href="{% url 'usuarios_del' pk=x.rut %}">Eliminar</a></td>
+                    <td><a href="{% url 'usuarios_findEdit' pk=x.rut %}">Modificar</a></td>
+                </tr>
+            {% endfor %}
+        {% endif %}
+    </table>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#idMensajes").delay(2000).fadeOut("slow");
+        });
+    </script>
+</body>
+</html>

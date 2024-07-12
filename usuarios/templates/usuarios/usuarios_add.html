@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Formulario Creacion de Usuario</h2>
+        <form action="usuariosAdd" method="post">
+            {% csrf_token %}
+            <pre>Rut:           <input type="text"></pre>
+            <pre>Nombre:        <input type="text"></pre>
+            <pre>Apellido P.:   <input type="text"></pre>
+            <pre>Apellido M.:   <input type="text"></pre>
+            <pre>Fecha Nac.:    <input type="text"></pre>
+            <pre>Genero:        <select name="genero">
+                {% for genero in generos %}
+                    <option value="{{genero.id_genero}}">{{genero.genero}}</option>
+                {% endfor %}
+            </select></pre>
+            <pre>Celular:       <input type="text"></pre>
+            <pre>Email:         <input type="text"></pre>
+            <pre>Direccion:     <input type="text"></pre>
+            <input type="submit" name="opcion" id="Agregar">
+        </form>
+        <br><br>
+        <a href="{% url 'crud' %}">Volver</a>
+        <br>
+        <div id="idMensajes">
+            {% if mensaje %}
+                {{mensaje}}
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
