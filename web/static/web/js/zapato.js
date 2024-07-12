@@ -9,7 +9,7 @@ export const enviarZapato = (id,
     stock,
     detalles) =>{
 
-        const rutaArchivoHTML = "../../../templates/zapateria/zapato.html";
+        const rutaArchivoHTML = "{% static ../../templates/zapateria/zapato.html}";
 
         fetch(rutaArchivoHTML)
             .then(response => response.text())
